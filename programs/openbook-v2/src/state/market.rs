@@ -17,7 +17,7 @@ pub const FEES_SCALE_FACTOR: i128 = 1_000_000;
 pub const PENALTY_EVENT_HEAP: u64 = 500;
 
 #[account(zero_copy)]
-#[repr(packed)]
+#[repr(C)]
 #[derive(Debug)]
 pub struct Market {
     /// PDA bump
